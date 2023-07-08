@@ -19,7 +19,7 @@
                       <a class="nav-link {{ Request::is('/') ? 'menu-active' : ''}}" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link {{ Request::is('/about') ? 'menu-active' : ''}}" href="/about">About</a>
+                      <a class="nav-link {{ Request::is('about') ? 'menu-active' : ''}}" href="/about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ Request::is('services') ? 'menu-active' : ''}}" href="/services">Services</a>
@@ -34,7 +34,7 @@
                   </ul>
                   <form class="d-flex">
                     <a href="" class="btn btn-primary"> <i class="fas fa-user"></i> Login</a>
-                   </form>
+                  </form>
                 </div>
             </div>
              
