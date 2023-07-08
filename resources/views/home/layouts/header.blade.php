@@ -1,4 +1,8 @@
-
+<style>
+  .menu-active{
+    color:white !important;
+    font-weight: bold;
+  }</style>
         <header>
             <!-- Fixed navbar -->
             <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow">
@@ -12,19 +16,19 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                   <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="/">Home</a>
+                      <a class="nav-link {{ Request::is('/') ? 'menu-active' : ''}}" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="/about">About</a>
+                      <a class="nav-link {{ Request::is('/about') ? 'menu-active' : ''}}" href="/about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/services">Services</a>
+                        <a class="nav-link {{ Request::is('services') ? 'menu-active' : ''}}" href="/services">Services</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="/blog">Blog</a>
+                        <a class="nav-link {{ Request::is('blog') ? 'menu-active' : ''}}" href="/blog">Blog</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="/contact">Contact</a>
+                        <a class="nav-link {{ Request::is('contact') ? 'menu-active' : ''}}" href="/contact">Contact</a>
                       </li>
                     
                   </ul>
