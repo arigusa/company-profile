@@ -75,7 +75,8 @@
     <div class="container my-4">
         <h4 class="text-center">Services</h4>
         <p class="text-center">apa yang kami lakukan?</p>
-      </div>
+    </div>
+
       <div class="row">
 
     @for ($i = 0; $i < 4; $i++)
@@ -112,12 +113,11 @@
 </style>
 
       <div class="container my-2">
-        <h4 class="text-center">Blog</h4>
-        <p class="text-center">apa yang anda ingin lakukan hari ini?</p>
-      </div>
-
-      <div class="row">
-
+        <div class="text-center">
+          <h4 class="text-center">Blog</h4>
+          <p class="text-center">apa yang anda ingin lakukan hari ini?</p>
+        </div>
+        <div class="row">
         @for ($i = 1; $i <= 4; $i++)
         <div class="col-md-3">
           <div class="card shadow-sm">
@@ -138,7 +138,8 @@
         <div class="text-center mt-3">
           <a href="" class="btn btn-success px-5">Selengkapnya <i class="fas fa-arrow-right"></i></a>
       </div>
-      </div>
+    </div>
+      
 
       <div class="bg-success my-5">
         <div class="container py-2">

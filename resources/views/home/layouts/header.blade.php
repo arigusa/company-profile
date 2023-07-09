@@ -33,10 +33,9 @@
                     
                   </ul>
                   <form class="d-flex">
-                    <a href="" class="btn btn-primary"> <i class="fas fa-user"></i> Login</a>
+                    <a href="/login" class="btn btn-primary"> <i class="fas fa-user"></i> Login</a>
                   </form>
                 </div>
             </div>
-             
             </nav>
           </header>
