@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminUserController;
+use App\Http\Controllers\AdminBannerController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -51,5 +52,6 @@ Route::prefix('/admin')->group(function (){
         return view('admin.layouts.wrapper', $data);
     });
 
-    Route::resource('/user', AdminUserController::class);
+Route::resource('/banner', AdminBannerController::class);
+Route::resource('/user', AdminUserController::class);
 });
